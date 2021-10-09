@@ -39,8 +39,8 @@ public class Queue<T> {
 
     public T pop () {
         if (!queue.isEmpty()) {
-            T removed = queue.get(state - 1);
-            queue.remove(state - 1);
+            T removed = queue.get(0);
+            queue.remove(0);
             state--;
             return removed;
 
